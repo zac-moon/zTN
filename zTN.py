@@ -11,7 +11,7 @@ def on_window_load():
     try:
         with open('savefile.txt', 'r') as file:
             data = file.read()
-            text.delete("1.0", tk.END)  # Clear the Text widget
+            text.delete("1.0", tk.END)  
             text.insert("1.0", data)
     except FileNotFoundError:
         print("No save file found.")
@@ -23,5 +23,5 @@ def on_window_close():
     root.destroy()
 
 root.protocol("WM_DELETE_WINDOW", on_window_close)
-root.after(100, on_window_load)  # Call after GUI setup
+root.after(100, on_window_load) 
 root.mainloop()
