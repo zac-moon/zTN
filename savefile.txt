@@ -1,3 +1,9 @@
-Remember This Note
+Welcome to zTN Notes v1.1
+
+zTN automatically saves the notes you write into this window to a savefile, which is loaded when youopen the window again. 
+
+
+
+
 
 
