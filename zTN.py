@@ -1,7 +1,7 @@
 import tkinter as tk
 
 root = tk.Tk()
-root.title("My Notes")
+root.title("zTN Notes")
 
 text = tk.Text(root)
 
