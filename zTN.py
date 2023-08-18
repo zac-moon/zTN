@@ -4,7 +4,6 @@ root = tk.Tk()
 root.title("My Notes")
 
 text = tk.Text(root)
-text.pack(fill=tk.BOTH, expand=True)
 
 def on_window_load():
     print('window loaded')
@@ -21,6 +20,8 @@ def on_window_close():
     with open('savefile.txt', 'w') as file:
         file.write(datas)
     root.destroy()
+
+text.pack(fill=tk.BOTH, expand=True)
 
 root.protocol("WM_DELETE_WINDOW", on_window_close)
 root.after(100, on_window_load) 
