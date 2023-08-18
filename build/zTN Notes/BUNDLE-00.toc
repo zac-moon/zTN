@@ -1,0 +1,3 @@
+([('zTN Notes',
+   '/Users/paulmoon/Desktop/zacmoon/zTN/dist/zTN Notes',
+   'EXECUTABLE')],)
