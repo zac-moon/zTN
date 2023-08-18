@@ -2,8 +2,9 @@ import tkinter as tk
 
 root = tk.Tk()
 root.title("zTN Notes")
+root.geometry('600x400')
 
-text = tk.Text(root)
+text = tk.Text(root,font=('Arial',45))
 
 def on_window_load():
     print('window loaded')
