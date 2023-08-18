@@ -1,5 +1,4 @@
 import tkinter as tk
-from tkinter import ttk
 
 root = tk.Tk()
 root.title("zTN Notes")
@@ -22,13 +21,8 @@ def on_window_close():
         file.write(datas)
     root.destroy()
 
-notebook = ttk.Notebook()
-
-text = tk.Text(root)
-
 text.pack(fill=tk.BOTH, expand=True)
 
 root.protocol("WM_DELETE_WINDOW", on_window_close)
-root.protocol('')
 root.after(100, on_window_load) 
 root.mainloop()
